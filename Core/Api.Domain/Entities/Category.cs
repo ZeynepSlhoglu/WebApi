@@ -27,6 +27,8 @@ namespace Api.Domain.Entities
         public required int ParentId { get; set; }
         public required string Name { get; set; }
         public required int Priorty { get; set; }
-        public ICollection<Detail> Details { get; set; }    
+        public ICollection<Detail> Details { get; set; }
+        public ICollection<Product> Products { get; set; }
+
     }
 }

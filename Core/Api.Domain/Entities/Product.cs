@@ -16,5 +16,6 @@ namespace Api.Domain.Entities
         public required decimal Price { get; set; }
         public required decimal Discount { get; set; }
         public Brand Brand { get; set; }
+        public ICollection<Category> Categories { get; set; }
     }
 }
