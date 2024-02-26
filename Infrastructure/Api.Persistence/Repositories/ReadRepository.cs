@@ -13,7 +13,7 @@ namespace Api.Persistence.Repositories
 {
     public class ReadRepository<T> : IReadRepository<T> where T : class, IEntityBase, new()
     {
-        public DbContext dbContext;
+        private readonly DbContext dbContext;
         public ReadRepository(DbContext dbContext)
         {
             this.dbContext = dbContext;
